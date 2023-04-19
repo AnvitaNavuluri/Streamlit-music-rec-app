@@ -14,7 +14,7 @@ def playlist_model(url, model, max_gen=3, same_art=5):
     try:
      log.append('Start logging')
      uri = url.split('/')[-1].split('?')[0]
-     stream = open("Spotify/Spotify1.yaml")
+     stream = open("Spotify/Spotify3.yaml")
      spotify_details = yaml.safe_load(stream)
      auth_manager = SpotifyClientCredentials(
          client_id=spotify_details['Client_id'], client_secret=spotify_details['client_secret'])
@@ -261,7 +261,7 @@ def playlist_model(url, model, max_gen=3, same_art=5):
 
 def top_tracks(url,region):
     uri = url.split('/')[-1].split('?')[0]
-    stream= open("Spotify/Spotify.yaml")
+    stream= open("Spotify/Spotify3.yaml")
     spotify_details = yaml.safe_load(stream)
     auth_manager = SpotifyClientCredentials(client_id=spotify_details['Client_id'],client_secret=spotify_details['client_secret'])
     sp = spotipy.client.Spotify(auth_manager=auth_manager)
@@ -284,7 +284,7 @@ def song_model(url, model, max_gen=3, same_art=5):
     try:
      log.append('Start logging')
      uri = url.split('/')[-1].split('?')[0]
-     stream = open("Spotify/Spotify.yaml")
+     stream = open("Spotify/Spotify3.yaml")
      spotify_details = yaml.safe_load(stream)
      auth_manager = SpotifyClientCredentials(
          client_id=spotify_details['Client_id'], client_secret=spotify_details['client_secret'])
