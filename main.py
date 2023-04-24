@@ -43,7 +43,7 @@ def update_song_url():
     st.session_state.s_url = st.session_state.song_url
 
 if 'a_url' not in st.session_state:
-    st.session_state.a_url = 'Example: https://open.spotify.com/artist/5Rl15oVamLq7FbSb0NNBNy?si=2RBS2GMuR6aE9XzQIW_pnw'
+    st.session_state.a_url = 'Example: https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM?si=LIuNdD4CQ6uhdStuUmw5gg'
 def update_artist_url():
     st.session_state.a_url = st.session_state.artist_url
 
